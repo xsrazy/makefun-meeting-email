@@ -7,9 +7,10 @@ people spend a full hour reaching the obvious verdict, then, instead of
 just sending the email, schedule another meeting to confirm it. The turn
 lands on the last words, and every word earns its place. No em dash.
 
-The program writes exactly that one line to /output/entry.txt, byte-exact
-with no trailing newline, mode 0644, so the gate sees UTF-8 text of 1 to
-200 characters and nothing else.
+The program writes exactly that one line to $MAKEFUN_OUTPUT_DIR/entry.txt
+(default /output/entry.txt), byte-exact with no trailing newline, mode
+0644, so the gate sees UTF-8 text of 1 to 200 characters and nothing else.
+Run it with: MAKEFUN_OUTPUT_DIR=/tmp/out python3 main.py
 """
 
 import os
